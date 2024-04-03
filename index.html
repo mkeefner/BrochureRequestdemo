@@ -15,6 +15,12 @@
     <div class="container mt-5">
         <h1>Request a Brochure!</h1>
         <form class="row g-3" action="https://formsubmit.co/mike@floriangreenhouse.com" method="POST">
+          <!-- Honeypot -->
+           <input type="text" name="_honey" style="display: none;">
+
+           <!-- Disable Captcha -->
+           <input type="hidden" name="_captcha" value="false">
+           
             <div class="col-md-6">
             <label for="firstname" class="form-label">First Name</label>
             <input type="text" class="form-control" name="Name" id="firstname" required>
